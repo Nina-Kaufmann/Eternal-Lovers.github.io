@@ -1,2 +1,2 @@
-# Eternal-Lovers.github.io
-This is a simple website for my digital-art project "Eternal Lovers" 
+# Eternal Lovers
+A simple art porfolio website for the project "Eternal Lovers" by Nina Kaufmann. The website uses https://html5up.net/read-only as template.

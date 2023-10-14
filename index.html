@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Eternal Lovers</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="google-site-verification" content="D0-1J7kqygZ1LMUTVCdwGhUP5wwKsnFnhg8f_2l-5fI" />
+		<link rel="stylesheet" href="assets/css/home.css" />
+		<link rel="stylesheet" href="assets/css/lightbox-locked.css" />
+        <link rel="alternate" hreflang="en" href="index.html" />
+	</head>
+	<body class="is-preload">
+            </div>
+                    <div class="container">
+                        <h4><br></h4>
+                        <h2><b>Nina Kaufmann</b></h2>
+                        <h4><b>"Eternal Lovers"</b></h4>
+                        <h6><br></h6>
+                    </div>
+
+                    <div class="sticky">
+                        <h5><a href='project.html' rel="external" class="button">About "Eternal Lovers"</a>
+                    </div>
+                    <h6><br></h6>
+                    <section id="photos">
+                        <a href="images/1.jpg" data-lightbox="test" data-title="Two Lovers In The Moonlight - Summer 2022"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAQAAADMUVVtAAAADklEQVR42mNkQAKMZHAAAQQABuy1MbgAAAAASUVORK5CYII=" class="lazy" data-src="images/1.jpg" alt="Two Lovers In The Moonlight - Summer 2022" />
+                        </a>
+                        <a href="images/2.jpg" data-lightbox="test" data-title="Flower Field - Summer 2022"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAQAAADIpIVQAAAADklEQVR42mNkgAJGIhgAALQABsHyMOcAAAAASUVORK5CYII=" class="lazy" data-src="images/2.jpg" alt="Flower Field - Summer 2022" />
+                        </a>
+                        <a href="images/3.jpg" data-lightbox="test" data-title="Streetlights At Midnight - Winter 2022"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAQAAADIpIVQAAAADklEQVR42mNkgAJGIhgAALQABsHyMOcAAAAASUVORK5CYII=" class="lazy" data-src="images/3.jpg" alt="Streetlights At Midnight - Winter 2022" />
+                        </a>
+                        <a href="images/4.jpg" data-lightbox="test" data-title="Rainfall - Fall 2022"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAQAAADMUVVtAAAADklEQVR42mNkQAKMZHAAAQQABuy1MbgAAAAASUVORK5CYII=" class="lazy" data-src="images/4.jpg" alt="Rainfall - Fall 2022" />
+                        </a>
+                        <a href="images/5.jpg" data-lightbox="test" data-title="Kiss In The Streetlight - Summer 2022"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAQAAACh8pzAAAAADklEQVR42mNkgANG8pgAASkAB1mKT2kAAAAASUVORK5CYII=" class="lazy" data-src="images/5.jpg" alt="Kiss In The Streetlight - Summer 2022" />
+                        </a>
+                        <a href="images/6.jpg" data-lightbox="test" data-title="Midnight Stroll - Fall 2022"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAQAAAAaVV8oAAAAD0lEQVR42mNkwACMw00IAAauAA2NS2agAAAAAElFTkSuQmCC" class="lazy" data-src="images/6.jpg" alt="Midnight Stroll - Fall 2022" />
+                        </a>
+                        <a href="images/7.jpg" data-lightbox="test" data-title="Colourfest - Spring 2023"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAQAAAAaVV8oAAAAD0lEQVR42mNkwACMw00IAAauAA2NS2agAAAAAElFTkSuQmCC" class="lazy" data-src="images/7.jpg" alt="Colourfest - Spring 2023" />
+                        </a>
+                    </section>        
+            <script src='assets/js/jquery-1.11.3.js'></script>
+            <script src='assets/js/jquery.mobile-1.4.5.min.js'></script>
+            <script src="assets/js/jquery.lazy.min.js"></script>
+            <script src="assets/js/lightbox-locked.js"></script> 
+            <script>
+            $.mobile.loading().hide();
+            </script>
+            <script>
+            $(function() {
+                $('.lazy').lazy({
+                    threshold: 0,
+                    effect: "fadeIn",
+                    effectTime: 400,
+                    enableThrottle: true,
+                    throttle: 50,
+                });
+            });
+            </script>
+            <script>
+                lightbox.option({
+                'showImageNumberLabel' : false,
+                'wrapAround': true,
+                'positionFromTop': 10,
+                'resizeDuration': 0,
+                'imageFadeDuration': 300,
+                'fadeDuration': 300,
+                'disableScrolling': true
+                })
+            </script>
+            <script>
+            function leftTrigger(){
+                    setTimeout(function(){
+                        $('.lightbox').on('swipeleft', leftHandler);
+
+                        function leftHandler(){
+                        $('.lb-next').click();
+                        }
+                    }, 0);
+                }
+
+                
+
+                function rightTrigger(){
+                    setTimeout(function(){
+                        $('.lightbox').on('swiperight', leftHandler);
+
+                        function leftHandler(){
+                        $('.lb-prev').click();
+                        }
+                    }, 0);
+                }
+            
+                $('[data-lightbox]').on('click', function(){
+                    leftTrigger();
+                    rightTrigger();
+                    $('[data-lightbox]').off('click')
+                });
+            </script>
+            
+
+	</body>
+</html>
